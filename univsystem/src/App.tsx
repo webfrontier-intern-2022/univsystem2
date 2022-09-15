@@ -17,6 +17,7 @@ import ProfesserListPage from './pages/ProfesserListPage'
 import CourseEditorPage from './pages/CourseEditorPage'
 import StudentEditorPage from './pages/StudentEditorPage'
 import ProfesserEditorPage from './pages/ProfesserEditorPage'
+import CourseJoinPage from './pages/CourseJoinPage'
 
 //URLの割り当て
 const App: React.FC = () => {
@@ -32,6 +33,7 @@ const App: React.FC = () => {
                 <Route path="/CourseEditorPage" element={<CourseEditorPage />} />
                 <Route path="/StudentEditorPage" element={<StudentEditorPage />} />
                 <Route path="/ProfesserEditorPage" element={<ProfesserEditorPage />} />
+                <Route path="/CourseJoinPage" element={<CourseJoinPage />} />
             </Routes>
         </BrowserRouter>
     )

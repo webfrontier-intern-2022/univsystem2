@@ -13,7 +13,7 @@ const ProfesserPage: React.FC = () => {
 
     //仮置きのリスト
     //TODO:データベースからリストを引っ張ってくる
-    const todos: listItem[] = [
+    const lists: listItem[] = [
         { id: 1, name: "コミュ１" },
         { id: 2, name: "コミュ２" },
     ];
@@ -25,7 +25,7 @@ const ProfesserPage: React.FC = () => {
             <Link to="/">ログアウト</Link>
             <h1>教授ページ</h1>
             <ul className="todo-list">
-                {todos.map((item: listItem) => {
+                {lists.map((item: listItem) => {
                     return (
                         <li key={item.id}>
                             <span>
