@@ -71,6 +71,7 @@ def create_user(user: User):
         print("input:"+user.inputMail)
         print("outpu:"+i.mail)
 
+        #XXX:メアドが合っていればログインできてしまう状況
         if user.inputMail==i.mail:
             userType="Student"
             break
