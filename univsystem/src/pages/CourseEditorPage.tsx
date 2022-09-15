@@ -5,7 +5,7 @@
 //https://qiita.com/etou25867873/items/d8c94ba46926d817fce9
 
 import React from 'react'
-import { useLocation } from "react-router-dom";
+import { useLocation,Link } from "react-router-dom";
 
 const CourseEditorPage: React.FC = () => {
     const location = useLocation();
@@ -13,6 +13,7 @@ const CourseEditorPage: React.FC = () => {
         <div>
             <h1>講義情報を編集</h1>
             <p>{location.state}</p>
+            <Link to="/SuperUserPage">戻る</Link>
         </div>
     )
 }
