@@ -11,6 +11,8 @@ type listItem = {
 
 const ProfesserPage: React.FC = () => {
 
+    //仮置きのリスト
+    //TODO:データベースからリストを引っ張ってくる
     const todos: listItem[] = [
         { id: 1, name: "コミュ１" },
         { id: 2, name: "コミュ２" },
