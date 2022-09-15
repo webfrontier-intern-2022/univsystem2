@@ -16,16 +16,18 @@ const ProfesserPage: React.FC = () => {
         { id: 2, name: "コミュ２" },
     ];
 
+    //リストを表示
+    //クリックされたら遷移先にIDを渡す
     return (
         <div>
             <Link to="/">ログアウト</Link>
             <h1>教授ページ</h1>
             <ul className="todo-list">
-                {todos.map((todo: listItem) => {
+                {todos.map((item: listItem) => {
                     return (
-                        <li className="todo-item" key={todo.id}>
-                            <span className="todo-item__text">
-                            <Link to="/CourseEditorPage">{todo.name}</Link>
+                        <li key={item.id}>
+                            <span>
+                                <Link to="/CourseEditorPage" state={item.id}>{item.name}</Link>
                             </span>
                         </li>
                     );
