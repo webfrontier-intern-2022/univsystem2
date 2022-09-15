@@ -12,8 +12,11 @@ import LoginPage from './pages/LoginPage'
 import SuperUserPage from './pages/SuperUserPage'
 import StudentPage from './pages/StudentPage' 
 import ProfesserPage from './pages/ProfesserPage'
-import EditStudentPage from './pages/EditStudentPage'
-import EditProfesserPage from './pages/EditProfesserPage'
+import StudentListPage from './pages/StudentListPage'
+import ProfesserListPage from './pages/ProfesserListPage'
+import CourseEditorPage from './pages/CourseEditorPage'
+import StudentEditorPage from './pages/StudentEditorPage'
+import ProfesserEditorPage from './pages/ProfesserEditorPage'
 
 //URLの割り当て
 const App: React.FC = () => {
@@ -24,8 +27,11 @@ const App: React.FC = () => {
                 <Route path="SuperUserPage" element={<SuperUserPage />} />
                 <Route path="/StudentPage" element={<StudentPage />} />
                 <Route path="/ProfesserPage" element={<ProfesserPage />} />
-                <Route path="/EditStudentPage" element={<EditStudentPage />} />
-                <Route path="/EditProfesserPage" element={<EditProfesserPage />} />
+                <Route path="/StudentListPage" element={<StudentListPage />} />
+                <Route path="/ProfesserListPage" element={<ProfesserListPage />} />
+                <Route path="/CourseEditorPage" element={<CourseEditorPage />} />
+                <Route path="/StudentEditorPage" element={<StudentEditorPage />} />
+                <Route path="/ProfesserEditorPage" element={<ProfesserEditorPage />} />
             </Routes>
         </BrowserRouter>
     )

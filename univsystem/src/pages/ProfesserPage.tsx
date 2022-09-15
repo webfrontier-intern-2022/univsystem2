@@ -25,7 +25,7 @@ const ProfesserPage: React.FC = () => {
                     return (
                         <li className="todo-item" key={todo.id}>
                             <span className="todo-item__text">
-                                {todo.name}
+                            <Link to="/CourseEditorPage">{todo.name}</Link>
                             </span>
                         </li>
                     );

@@ -7,9 +7,9 @@ const SuperUserPage: React.FC = () => {
             <Link to="/">ログアウト</Link>
             <h1>管理者ページ</h1>
             
-            <Link to="/EditStudentPage">学生一覧</Link>
+            <Link to="/StudentListPage">学生一覧</Link>
             <p></p>
-            <Link to="/EditProfesserPage">教授一覧</Link>
+            <Link to="/ProfesserListPage">教授一覧</Link>
         </div>
     )
 }
